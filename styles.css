@@ -1,0 +1,382 @@
+/* Estilos generales */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #F9F9F9; /* Fondo blanco suave */
+    color: #333333; /* Gris oscuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Menú lateral */
+#menu-portafolio {
+    width: 250px;
+    background: #EAEAEA; /* Gris claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#menu-portafolio ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-portafolio li {
+    margin: 10px 0;
+}
+
+/* Botones de navegación */
+.nav-button {
+    display: block;
+    padding: 12px;
+    background-color: #C08E8F; /* Rosado elegante */
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #8E8E93; /* Gris suave */
+    transform: scale(1.05);
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Estilos del título */
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    color: #C08E8F; /* Rosado elegante */
+}
+
+/* Botones animados */
+.boton {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #C08E8F, #8E8E93); /* Rosado y gris */
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #8E8E93, #C08E8F); /* Inversión de colores */
+}
+
+/* Contenedor de Sobre Mí */
+.sobre-mi-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Imagen de perfil */
+.perfil-img {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(192, 142, 143, 0.7); /* Sombra rosada */
+}
+
+/* Tarjetas para secciones */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(192, 142, 143, 0.5); /* Sombra rosada */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Separadores gráficos */
+.divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #C08E8F, #8E8E93);
+    margin: 30px auto;
+}
+
+/* Estilos para la lista de estudios */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Contenedor de experiencia laboral */
+.trabajos article {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Contenedor de referencias personales */
+.referencia {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Botón de LinkedIn */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #C08E8F;
+    color: #F9F9F9;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #8E8E93;
+    transform: scale(1.05);
+}
+
+/* Animaciones de aparición */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sección de carrusel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    min-width: 300px;
+    background: #EAEAEA;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de flecha */
+.arrow {
+    background: #C08E8F;
+    color: #FFFFFF;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.arrow:hover {
+    background: #8E8E93;
+}
+
+/* Sección de carrusel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    scroll-behavior: smooth;
+}
+
+.producto {
+    min-width: 200px;
+    background: #EAEAEA;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: #C08E8F;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+}
+
+.producto .boton {
+    display: block;
+    padding: 10px;
+    background-color: #C08E8F;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.producto .boton:hover {
+    background-color: #8E8E93;
+}
+
+/* Botones de flecha */
+.arrow {
+    background: #C08E8F;
+    color: #FFFFFF;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.arrow:hover {
+    background: #8E8E93;
+}
+
+/* Estilo de catálogo */
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(192, 142, 143, 0.4);
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1; /* Mantener proporciones correctas */
+}
+
+.producto h3 {
+    color: #C08E8F;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.producto p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #444; /* Mayor contraste */
+}
+
+.producto .boton {
+    display: block;
+    padding: 12px;
+    background-color: #C08E8F;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.producto .boton:hover, .producto .boton:focus {
+    background-color: #8E8E93;
+    outline: 2px solid #FFFFFF; /* Accesibilidad para usuarios de teclado */
+}
+
+/* Mejora accesibilidad */
+@media (max-width: 768px) {
+    .productos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .producto {
+        width: 90%;
+    }
+}

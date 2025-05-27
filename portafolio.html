@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Nicolle Villarreal Melo, estudiante de Ingeniería de Software.">
+    <title>Portafolio Web - Nicolle Villarreal Melo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <a href="index.html" class="button">⬅ Volver al Inicio</a>
+    </header>
+
+    <div class="container">
+        <!-- Menú lateral -->
+        <nav id="menu-portafolio">
+            <ul>
+                <li><a href="#sobre-mi" class="nav-button">🧑‍💻 Sobre Mí</a></li>
+                <li><a href="#educacion" class="nav-button">📚 Educación</a></li>
+                <li><a href="#experiencia" class="nav-button">💼 Experiencia</a></li>
+                <li><a href="#proyectos" class="nav-button">💡 Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-button">🚀 Habilidades</a></li>
+                <li><a href="#referencias" class="nav-button">📌 Referencias</a></li>
+                <li><a href="#contacto" class="nav-button">🔗 Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <section id="sobre-mi" class="fade-in">
+                <h2>🧑‍💻 Sobre Mí</h2>
+                <div class="card">
+                    <img src="foto.jpg" alt="Foto de Nicolle Villarreal Melo" class="perfil-img">
+                    <p>Soy estudiante universitaria de **Ingeniería de Software** con una gran capacidad de adaptación y aprendizaje.</p>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="educacion" class="fade-in">
+                <h2>📚 Formación Académica</h2>
+                <div class="card">
+                    <p><strong>Ingeniería de Software</strong> - Universidad Manuela Beltrán (5° semestre).</p>
+                    <p><strong>Bachiller Académico</strong> - Colegio Femenino San Juan Bosco.</p>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="experiencia" class="fade-in">
+                <h2>💼 Experiencia Laboral</h2>
+                <div class="card">
+                    <article>
+                        <h3>KANTAR Millward Brown (Mayo 2023 - Actualidad)</h3>
+                        <ul>
+                            <li>Procesamiento y revisión de datos.</li>
+                            <li>Generación de reportes para investigación de mercados.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- Sección deslizante de proyectos con botones de flecha -->
+            <section id="proyectos" class="fade-in">
+                <h2>💡 Mis Proyectos</h2>
+                <div class="carousel-container">
+                    <button class="arrow left-arrow" onclick="moveSlide(-1)">❮</button>
+                    <div class="carousel">
+                        <div class="slide">
+                            <h3>GameReviewApp 🎮</h3>
+                            <p>Aplicación web para reseñas de videojuegos con MongoDB y Flask.</p>
+                        </div>
+                        <div class="slide">
+                            <h3>E-CommerceFlow 🛍️</h3>
+                            <p>Plataforma de comercio electrónico con optimización en UX/UI y pagos seguros.</p>
+                        </div>
+                        <div class="slide">
+                            <h3>AutoWebScraper 🤖</h3>
+                            <p>Herramienta de automatización con Selenium para extracción de datos.</p>
+                        </div>
+                        <div class="slide">
+                            <h3>CreativePortfolio 🎨</h3>
+                            <p>Portafolio interactivo con animaciones y efectos visuales.</p>
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow" onclick="moveSlide(1)">❯</button>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="habilidades" class="fade-in">
+                <h2>🚀 Habilidades</h2>
+                <ul class="card">
+                    <li>Trabajo en equipo</li>
+                    <li>Liderazgo</li>
+                    <li>Solución de problemas</li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section id="referencias" class="fade-in">
+                <h2>📌 Referencias Personales</h2>
+                <div class="card">
+                    <p><strong>Daniel Villarreal</strong> - Ingeniero de Sistemas</p>
+                    <p>📞 Contacto: 3163118094</p>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="contacto" class="fade-in">
+                <h2>🔗 Contacto</h2>
+                <a href="https://www.linkedin.com/in/nicolle-villarreal-melo/" target="_blank" class="button">Visita mi perfil en LinkedIn</a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Vinculación de script.js al final del body -->
+    <script src="script.js"></script>
+</body>
+</html>
